@@ -74,7 +74,6 @@ header h1 {
 }
 
 nav {
-  background-color: var(--background-main-color);
   height: 50px;
   display: flex;
   margin-bottom: 10px;
@@ -96,7 +95,6 @@ nav ul li {
 nav ul li a {
   display: inline-block;
   font-size: 2rem;
-  text-decoration: none;
   color: black;
 }
 
@@ -125,8 +123,8 @@ form button {
   color: white;
 }
 
-div[class="nav"], article, footer, .secondary {
-  background-color: green;
+nav, article, footer, .secondary {
+  background-color: var(--background-main-color);
 }
 
 /* || main layout */
@@ -147,8 +145,40 @@ article {
   flex: 5;
 }
 
+h2 {
+  font-size: 4rem;
+  color: #000000;
+  margin: 10px 0;
+}
+
+h3 {
+  font-size: 3rem;
+  color: #000000;
+  margin: 10px 0;
+}
+
 .secondary {
   flex: 2;
+}
+
+.secondary ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.secondary a:link, a:visited, a:focus {
+  color: blue;
+}
+
+.secondary a:hover {
+  color: orange;
+}
+
+.secondary a:active {
+  color: gray;
 }
 
 footer {
@@ -161,6 +191,7 @@ table {
   width: 100%;
   background-color: #dde;
   border-collapse: collapse;
+  margin-bottom: 2rem;
 }
 
 th, td {
